@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.out {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    grid-template-areas: 
+    "nameblue nameblue white1-1"
+    "nameblue nameblue white1-2"
+    "white1-3 white1-4 ."
+    ;
+}
+
+.white1 { 
+   background: rgb(248, 250, 252);
+   border-radius: 5px;
+   border: 1px solid rgb(226, 232, 240);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding: 20px;
+}
+
+.blue1 {
+    background: linear-gradient(135deg, rgb(30, 58, 95), rgb(37, 99, 235));
+    border-radius: 5px;
+grid-area: nameblue;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 50px;
+}
+
+.white1-1 {
+    grid-area: white1-1;
+}
+
+.white1-2 {
+    grid-area: white1-2;
+}
+
+.white1-3 {
+    grid-area: white1-3;
+}
+
+.white1-4 {
+    grid-area: white1-4;
+}
+
+.font1 {
+    color: rgb(147, 197, 253);
+    margin-bottom: 10px;
+}
+
+.blue1 .font2 {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+.top {
+    color: rgb(100, 116, 139);
+}
+
+.but {
+    margin-top: 10px;
+    font-weight: 500;
+}

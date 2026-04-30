@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bbbb {
+    display: grid;
+    grid-template-rows: 1fr 100vh;
+    grid-template-columns: 90px 1fr 140px;
+    gap: 10px;
+    grid-template-areas: 
+    "front front front"
+    "side detail percen"
+    ;
+}
+
+.front {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    grid-area: front;
+}
+
+.tagp {
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: rgb(203, 213, 225);
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.part2 {
+    background-color: rgb(224, 242, 254);
+    display: flex;
+    padding-top: 10px;
+    padding-left: 4px;
+    grid-area: side;
+}
+
+
+button {
+    margin: 4px;
+    border: 0;
+    background-color: rgb(3, 105, 161);
+    color: white;
+    /* padding: 10px 10px; */
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(226, 232, 240);
+    padding: 20px;
+    gap: 10px;
+    grid-area: detail;
+    border-radius: 5px;
+}
+
+.work {
+    font-size: 13px;
+    font-weight: bolder;
+    color: rgb(110, 116, 139);
+}
+
+.des {
+    font-size: 22px;
+}
+
+.backwork {
+    font-size: 13px;
+    color: rgb(110, 116, 139);
+}
+
+.bye {
+    background-color: rgb(236, 253, 245);
+    border-radius: 5px;
+    padding: 10px;
+    grid-area: percen;
+}
+
+
+.inspe {
+    color: rgb(37, 99, 235);
+    font-weight: 900;
+    font-size: 12px;
+}
+.ww {
+    margin-top: 7px;
+    font-size: 12px;
+    color: green;
+    font-weight: bolder;
+}
+
+.line {
+    border-radius: 9999px;
+    height: 8px;
+    width: 100%;
+background: #22c55e;
+}
+.ww1 {
+    border-radius: 9999px;
+    height: 8px;
+    width: 70%;
+background: #22c55e;
+}
